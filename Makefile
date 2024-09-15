@@ -16,7 +16,7 @@ DEPDIR = dep
 ############## Do not change anything from here downwards! #############
 SRC = $(wildcard $(SRCDIR)/*$(EXT))
 OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
-DEP = $(OBJ:$(OBJDIR)/%.o=$(DEPDIR)/%.d)
+DEP = $(OBJ:$(OBJDIR)/%.o=$(DEPDIR)/$(DEPDIR)/%.d)
 # UNIX-based OS variables & settings
 RM = rm
 DELOBJ = $(OBJ)

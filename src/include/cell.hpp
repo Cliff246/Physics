@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <string>
 
-static int32_t id_counter = 0;
+extern int32_t id_counter;
 
 class cell
 {
@@ -12,5 +12,5 @@ private:
 	    
 public: 
     double x, y;
-	
+	cell();
 };
