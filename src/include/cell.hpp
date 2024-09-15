@@ -3,13 +3,14 @@
 #include <cstdint>
 #include <string>
 
-
+static int32_t id_counter = 0;
 
 class cell
 {
 private:
     int32_t id;
-
-public:
+	    
+public: 
     double x, y;
+	
 };
