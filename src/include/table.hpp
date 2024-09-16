@@ -5,12 +5,15 @@
 
 #include "cell.hpp"
 
-class table
+namespace physics_program
 {
-private:
-    int32_t rows, columns;
-public:
-    std::vector<std::vector<cell *>>tablelist;
+    class table
+    {
+    private:
+        int32_t rows, columns;
+    public:
+        std::vector<std::vector<cell *>>tablelist;
 
-    table(int32_t row, int32_t column);
-};
+        table(int32_t row, int32_t column);
+    };
+}

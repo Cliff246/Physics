@@ -3,14 +3,18 @@
 #include <cstdint>
 #include <string>
 
-extern int32_t id_counter;
-
-class cell
+namespace physics_program
 {
-private:
-    int32_t id;
-	    
-public: 
-    double x, y;
-	cell();
-};
+    
+    extern int32_t id_counter;
+    
+    class cell
+    {
+    private:
+        int32_t id;
+    
+    public: 
+        double x, y;
+    	cell();
+    };
+}
