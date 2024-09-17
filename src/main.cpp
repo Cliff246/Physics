@@ -25,6 +25,9 @@ int32_t main(int32_t argc, char **argv)
 
 
 
-    delete dp;
+    for(int x = 0; x < 10; x++)
+	{
+		delete dp[x];
+	}
     return 0;
 }

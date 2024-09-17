@@ -19,3 +19,4 @@ std::string& physics_program::datacontent::get_display_string()
 
     return *innerstring;
 }
+
