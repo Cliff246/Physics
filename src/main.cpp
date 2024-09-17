@@ -7,9 +7,24 @@ using namespace physics_program;
 
 int32_t main(int32_t argc, char **argv)
 {
-    cell *dp = new cell();
-    std::cout << "test\n";
-    std::cout << id_counter << " -> id_counter\n";
+    cell *dp[10];
+
+
+    for(int i = 0; i < 10; i++)
+    {
+        dp[i] = new cell();
+        std::cout << "test\n";
+        std::cout << id_counter << " -> id_counter\n";
+        dp[i]->print_to_terminal();
+    }
+ 
+
+
+
+
+
+
+
     delete dp;
     return 0;
 }

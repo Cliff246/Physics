@@ -14,15 +14,17 @@ namespace physics_program
         _complex,
         _time,
     };
-    
+
     class datacontent
     {
     private:
-        std::string innerstring;
+        std::string *innerstring;
         content_type type;
-    
-    
+
+
     public:
         datacontent(std::string get);
+
+        std::string& get_display_string();
     };
 }
